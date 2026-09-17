@@ -17,7 +17,7 @@
         <p><%= artifact.description %></p>
         <div class="actions">
           <a class="button secondary" href="/artifacts/<%= artifact._id %>/edit">Edit</a>
-          <form action="/artifacts/<%= artifact._id %>?_method=DELETE" method="POST">
+          <form action="/artifacts/<%= artifact._id %>?_method=PUT" method="POST">
             <button class="danger" type="submit">Delete</button>
           </form>
         </div>
