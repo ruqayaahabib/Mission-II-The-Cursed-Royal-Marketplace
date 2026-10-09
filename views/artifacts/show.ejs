@@ -17,7 +17,10 @@
         <p><%= artifact.description %></p>
         <div class="actions">
           <a class="button secondary" href="/artifacts/<%= artifact._id %>/edit">Edit</a>
-          <form action="/artifacts/<%= artifact._id %>?_method=PUT" method="POST">
+
+          <!--  use delete instead of puut to delete the artifact -->
+          <form action="/artifacts/<%= artifact._id %>?_method=DELETE" method="POST"> 
+
             <button class="danger" type="submit">Delete</button>
           </form>
         </div>

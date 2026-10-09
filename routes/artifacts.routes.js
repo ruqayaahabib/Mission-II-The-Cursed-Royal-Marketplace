@@ -18,7 +18,7 @@ router.get('/new', (req, res) => {
 router.post('/', async (req, res) => {
   try {
     await Artifact.create(req.body)
-    res.redirect('artifacts/index.ejs')
+    res.redirect('artifacts') //redirect to the artifacts route not the index.ejs file
   } catch (error) {
     console.log(error)
     res.redirect('/artifacts/new')
